@@ -10,7 +10,12 @@ const AXIS_IP = process.env.AXIS_IP || '192.168.1.100';
 const AXIS_USER = process.env.AXIS_USER || 'root';
 const AXIS_PASS = process.env.AXIS_PASS || 'pass';
 
-console.log(`✓ Proxy configurado para AXIS: ${AXIS_IP}`);
+console.log('=== DEBUG VARIABLES ===');
+   console.log('AXIS_IP:', process.env.AXIS_IP);
+   console.log('AXIS_USER:', process.env.AXIS_USER);
+   console.log('AXIS_PASS:', process.env.AXIS_PASS ? '***' : 'undefined');
+   console.log('Valor final AXIS_IP:', AXIS_IP);
+   console.log('======================');
 
 // Proxy para el stream
 app.use('/stream', createProxyMiddleware({
