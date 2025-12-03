@@ -11,26 +11,3 @@
     "cors": "^2.8.5"
   }
 }
-```
-
-4. Click en **"Commit new file"** (botón verde abajo)
-
----
-
-## **3. Volver a Railway:**
-
-Una vez que tengas AMBOS archivos (`index.js` y `package.json`) en GitHub:
-
-1. Volvé a **Railway** (railway.app)
-2. Click en **"GitHub Repository"**
-3. Buscá y seleccioná tu repo: **`axis-proxy-backend`**
-4. Railway va a detectar automáticamente que es Node.js y va a instalar las dependencias
-
----
-
-## **4. Esperar el deploy:**
-
-Railway va a mostrar logs mientras despliega. Esperá a que diga algo como:
-```
-✓ Build completed
-✓ Deployment successful
